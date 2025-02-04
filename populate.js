@@ -29,8 +29,8 @@ const upload = async () => {
     }
 
     process.exit(0);
-  } catch (error) {
-    console.error("Error:", error.message);
+  } catch (err) {
+    console.error("Error:", err.message);
 
     console.log("Unable to connect");
 
