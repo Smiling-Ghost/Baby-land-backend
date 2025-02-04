@@ -19,7 +19,7 @@ const newsletter = async (req, res) => {
 
     res.status(200).json({ message: "Subscription successful" });
   } catch (err) {
-    console.error("Error saving subscription:", error);
+    console.error("Error saving subscription:", err);
 
     res.status(500).json({ message: "Failed to subscribe" });
   }
